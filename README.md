@@ -58,7 +58,7 @@ A histogram to visualize the most common salary ranges for employees
 A bar chart of average salary by title
 ![barchart](https://github.com/britchin/sql-challenge/blob/main/Images/BarChart.png)
 
-- Epilogue
+## Epilogue
 Evidence in hand, I marched into my boss's office and presented the visualization. With a sly grin, my boss thanks me for my work. On my way out of the office, I hear the words, "Search your ID number." I look down at my badge to see that my employee ID number is 499942
 
 ![emp_ID](https://github.com/britchin/sql-challenge/blob/main/Images/emp_no.png)
