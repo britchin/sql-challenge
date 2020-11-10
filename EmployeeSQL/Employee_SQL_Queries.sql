@@ -1,3 +1,29 @@
+-- add CSV files to tables
+-- departments, titles, employees, salaries, dept_manager,dept_emp
+
+--list the details of each employee: employee number, last name, first name, sex, and salary
+
+SELECT employees.emp_no, employees.last_name, employees.first_name, employees.sex, salaries.salary
+FROM employees
+JOIN salaries
+ON employees.emp_no = salaries.emp_no;
+
+-- list the first name, last name, and hire date for employees who were hire in 1986
+
+
+SELECT employees.first_name, employees.last_name, employees.hire_date
+FROM employees
+WHERE hire_date between '1986-01-01' AND '1986-12-31';
+
+-- List the manager of each department with the following information: department number, department name, the managers employee number, last name, and first name
+
+SELECT departments.dept_no, departments.dept_name, dept_manager.emp_no, employees.last_name, employees.first_name
+FROM departments
+JOIN dept_manager 
+ON departments.dept_no = dept_manager.dept_no
+JOIN employees
+ON dept_manager.emp_no = employees.emp_no;
+
 -- List the department of each employee with the following information: employee number, last name, first name, and department name
 
 SELECT dept_emp.emp_no, employees.last_name, employees.first_name, departments.dept_name
